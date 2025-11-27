@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+  <title>Frontend Mentor | Interactive card details form</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+      font-weight: 700;
+      color: hsl(278, 94%, 30%);
+    }
+
+    .attribution a {
+      color: hsl(249, 99%, 64%);
+    }
+  </style>
+</head>
+
+<body>
+  <section class="right">
+    <picture class="cfront">
+      <img src="images/bg-card-front.png" alt=" card bank" id="cardf-img">
+      <div class="card-details">
+        <img src="images/card-logo.svg" alt="logo" id="logo-card">
+        <span class="cnum">0000000000000000</span>
+        <span class="cname">Your Name Here</span>
+        <span class="expdate"><span id="mon">00</span>/<span id="yar">00</span></span>
+      </div>
+    </picture>
+    <picture class="cback">
+      <img src="images/bg-card-back.png" alt="card bank" id="cardb-img">
+      <span class="cvc">000</span>
+    </picture>
+  </section>
+  <section class="left">
+
+    <form autocomplete="off" id="cardform">
+      <label class="holder1">Cardholder Name <br>
+        <input type="text" placeholder="Your Name Here" id="holder-name">
+        <small class="error-msg"></small>
+      </label>
+      
+
+      <label class="holder2">Card Number
+        <br>
+        <input type="text" placeholder="e.g. 1234 5678 9123 0000" id="holder-number">
+        <small class="error-msg1"></small>
+      </label>
+
+      <div class="cvv">
+        <label class="holder3">Exp. Date (MM/YY)
+          <br>
+          <input type="text" placeholder="MM" id="holder-month">
+          <input type="text" placeholder="YY" id="holder-year">
+          <br>
+          <small class="error-msg2"></small>
+        </label>
+        
+        
+        <label class="holder4">CVC
+          <br>
+          <input type="text" placeholder="e.g. 123" id="holder-cvc">
+          <small class="error-msg3"></small>
+        </label>
+      </div>
+      <button type="submit" id="submit-btn">Confirm</button>
+    </form>
+    <div class="Completed-state">
+      <img src="images/icon-complete.svg" alt="tick">
+      <h1>Thank you!</h1>
+      <p>We've added your card details</p>
+      <button>Continue</button>
+    </div>
+
+  </section>
+
+  <footer>
+    <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+      Coded by <a href="#">Sunag Arigala</a>.
+    </div>
+  </footer>
+  <script src="app.js"></script>
+</body>
+
+</html>
